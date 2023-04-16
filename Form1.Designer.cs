@@ -31,8 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pong));
             this.player1 = new System.Windows.Forms.PictureBox();
             this.cpuPlayer = new System.Windows.Forms.PictureBox();
+            this.pongBall = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cpuPlayer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pongBall)).BeginInit();
             this.SuspendLayout();
             // 
             // player1
@@ -53,6 +55,15 @@
             this.cpuPlayer.TabIndex = 1;
             this.cpuPlayer.TabStop = false;
             // 
+            // pongBall
+            // 
+            this.pongBall.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pongBall.BackgroundImage")));
+            this.pongBall.Location = new System.Drawing.Point(419, 260);
+            this.pongBall.Name = "pongBall";
+            this.pongBall.Size = new System.Drawing.Size(30, 30);
+            this.pongBall.TabIndex = 2;
+            this.pongBall.TabStop = false;
+            // 
             // Pong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -60,6 +71,7 @@
             this.BackgroundImage = global::csharp_pingpong.Properties.Resources.Pong_Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1158, 678);
+            this.Controls.Add(this.pongBall);
             this.Controls.Add(this.cpuPlayer);
             this.Controls.Add(this.player1);
             this.DoubleBuffered = true;
@@ -69,6 +81,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cpuPlayer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pongBall)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -77,5 +90,6 @@
 
         private PictureBox player1;
         private PictureBox cpuPlayer;
+        private PictureBox pongBall;
     }
 }
