@@ -61,6 +61,7 @@
             // 
             // pongBall
             // 
+            this.pongBall.BackColor = System.Drawing.Color.Transparent;
             this.pongBall.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pongBall.BackgroundImage")));
             this.pongBall.Location = new System.Drawing.Point(564, 324);
             this.pongBall.Name = "pongBall";
