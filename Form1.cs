@@ -1,10 +1,12 @@
 namespace csharp_pingpong
 {
-    public partial class Form1 : Form
+    public partial class Pong : Form
     {
-        public Form1()
+        public Pong()
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e) { }
     }
 }
