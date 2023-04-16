@@ -33,6 +33,8 @@
             this.cpuPlayer = new System.Windows.Forms.PictureBox();
             this.pongBall = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.playerScore = new System.Windows.Forms.Label();
+            this.cpuScore = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cpuPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pongBall)).BeginInit();
@@ -77,6 +79,28 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // playerScore
+            // 
+            this.playerScore.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.playerScore.ForeColor = System.Drawing.Color.Tomato;
+            this.playerScore.Location = new System.Drawing.Point(219, 38);
+            this.playerScore.Name = "playerScore";
+            this.playerScore.Size = new System.Drawing.Size(76, 76);
+            this.playerScore.TabIndex = 4;
+            this.playerScore.Text = "0";
+            this.playerScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cpuScore
+            // 
+            this.cpuScore.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cpuScore.ForeColor = System.Drawing.Color.Tomato;
+            this.cpuScore.Location = new System.Drawing.Point(882, 38);
+            this.cpuScore.Name = "cpuScore";
+            this.cpuScore.Size = new System.Drawing.Size(76, 76);
+            this.cpuScore.TabIndex = 5;
+            this.cpuScore.Text = "0";
+            this.cpuScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Pong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -84,6 +108,8 @@
             this.BackgroundImage = global::csharp_pingpong.Properties.Resources.Pong_Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1158, 678);
+            this.Controls.Add(this.cpuScore);
+            this.Controls.Add(this.playerScore);
             this.Controls.Add(this.pongBall);
             this.Controls.Add(this.cpuPlayer);
             this.Controls.Add(this.player1);
@@ -107,5 +133,7 @@
         private PictureBox cpuPlayer;
         private PictureBox pongBall;
         private PictureBox pictureBox1;
+        private Label playerScore;
+        private Label cpuScore;
     }
 }
