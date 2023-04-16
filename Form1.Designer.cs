@@ -32,15 +32,17 @@
             this.player1 = new System.Windows.Forms.PictureBox();
             this.cpuPlayer = new System.Windows.Forms.PictureBox();
             this.pongBall = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cpuPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pongBall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // player1
             // 
             this.player1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.player1.Location = new System.Drawing.Point(12, 215);
+            this.player1.Location = new System.Drawing.Point(12, 260);
             this.player1.Name = "player1";
             this.player1.Size = new System.Drawing.Size(22, 159);
             this.player1.TabIndex = 0;
@@ -48,8 +50,8 @@
             // 
             // cpuPlayer
             // 
-            this.cpuPlayer.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.cpuPlayer.Location = new System.Drawing.Point(1124, 215);
+            this.cpuPlayer.BackColor = System.Drawing.Color.IndianRed;
+            this.cpuPlayer.Location = new System.Drawing.Point(1124, 260);
             this.cpuPlayer.Name = "cpuPlayer";
             this.cpuPlayer.Size = new System.Drawing.Size(22, 159);
             this.cpuPlayer.TabIndex = 1;
@@ -58,11 +60,19 @@
             // pongBall
             // 
             this.pongBall.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pongBall.BackgroundImage")));
-            this.pongBall.Location = new System.Drawing.Point(419, 260);
+            this.pongBall.Location = new System.Drawing.Point(564, 324);
             this.pongBall.Name = "pongBall";
             this.pongBall.Size = new System.Drawing.Size(30, 30);
             this.pongBall.TabIndex = 2;
             this.pongBall.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(517, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(125, 62);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // Pong
             // 
@@ -71,6 +81,7 @@
             this.BackgroundImage = global::csharp_pingpong.Properties.Resources.Pong_Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1158, 678);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pongBall);
             this.Controls.Add(this.cpuPlayer);
             this.Controls.Add(this.player1);
@@ -82,6 +93,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cpuPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pongBall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -91,5 +103,6 @@
         private PictureBox player1;
         private PictureBox cpuPlayer;
         private PictureBox pongBall;
+        private PictureBox pictureBox1;
     }
 }
