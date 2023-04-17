@@ -105,6 +105,7 @@
             this.Controls.Add(this.thirdFace);
             this.Controls.Add(this.someFaceCharacter);
             this.Controls.Add(this.titleLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CharacterForm";
             this.Text = "Choose a Character!";
