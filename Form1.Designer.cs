@@ -82,9 +82,10 @@
             // 
             // playerScore
             // 
+            this.playerScore.BackColor = System.Drawing.Color.Transparent;
             this.playerScore.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.playerScore.ForeColor = System.Drawing.Color.Tomato;
-            this.playerScore.Location = new System.Drawing.Point(219, 38);
+            this.playerScore.Location = new System.Drawing.Point(391, 38);
             this.playerScore.Name = "playerScore";
             this.playerScore.Size = new System.Drawing.Size(76, 76);
             this.playerScore.TabIndex = 4;
@@ -93,9 +94,10 @@
             // 
             // cpuScore
             // 
+            this.cpuScore.BackColor = System.Drawing.Color.Transparent;
             this.cpuScore.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cpuScore.ForeColor = System.Drawing.Color.Tomato;
-            this.cpuScore.Location = new System.Drawing.Point(882, 38);
+            this.cpuScore.Location = new System.Drawing.Point(692, 38);
             this.cpuScore.Name = "cpuScore";
             this.cpuScore.Size = new System.Drawing.Size(76, 76);
             this.cpuScore.TabIndex = 5;
