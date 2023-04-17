@@ -120,6 +120,8 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1176, 725);
+            this.MinimumSize = new System.Drawing.Size(1176, 725);
             this.Name = "Pong";
             this.Text = "Pong";
             this.Load += new System.EventHandler(this.Form1_Load);
