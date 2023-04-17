@@ -55,9 +55,9 @@
             // 
             this.someFaceCharacter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("someFaceCharacter.BackgroundImage")));
             this.someFaceCharacter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.someFaceCharacter.Location = new System.Drawing.Point(62, 130);
+            this.someFaceCharacter.Location = new System.Drawing.Point(55, 192);
             this.someFaceCharacter.Name = "someFaceCharacter";
-            this.someFaceCharacter.Size = new System.Drawing.Size(140, 140);
+            this.someFaceCharacter.Size = new System.Drawing.Size(141, 141);
             this.someFaceCharacter.TabIndex = 1;
             this.someFaceCharacter.TabStop = false;
             // 
@@ -65,9 +65,9 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(429, 130);
+            this.pictureBox1.Location = new System.Drawing.Point(421, 192);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(140, 140);
+            this.pictureBox1.Size = new System.Drawing.Size(141, 142);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -75,9 +75,9 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(242, 130);
+            this.pictureBox2.Location = new System.Drawing.Point(238, 192);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(140, 140);
+            this.pictureBox2.Size = new System.Drawing.Size(141, 141);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
@@ -85,9 +85,9 @@
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(611, 130);
+            this.pictureBox3.Location = new System.Drawing.Point(604, 192);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(140, 140);
+            this.pictureBox3.Size = new System.Drawing.Size(141, 141);
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
