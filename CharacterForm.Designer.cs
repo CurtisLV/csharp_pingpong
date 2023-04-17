@@ -49,7 +49,6 @@
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "Click a Character!";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.titleLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // someFaceCharacter
             // 
@@ -60,6 +59,7 @@
             this.someFaceCharacter.Size = new System.Drawing.Size(141, 141);
             this.someFaceCharacter.TabIndex = 1;
             this.someFaceCharacter.TabStop = false;
+            this.someFaceCharacter.Click += new System.EventHandler(this.someFaceCharacter_Click);
             // 
             // thirdFace
             // 
@@ -70,6 +70,7 @@
             this.thirdFace.Size = new System.Drawing.Size(141, 142);
             this.thirdFace.TabIndex = 2;
             this.thirdFace.TabStop = false;
+            this.thirdFace.Click += new System.EventHandler(this.thirdFace_Click);
             // 
             // secondFace
             // 
@@ -80,6 +81,7 @@
             this.secondFace.Size = new System.Drawing.Size(141, 141);
             this.secondFace.TabIndex = 3;
             this.secondFace.TabStop = false;
+            this.secondFace.Click += new System.EventHandler(this.secondFace_Click);
             // 
             // fourthFace
             // 
@@ -90,6 +92,7 @@
             this.fourthFace.Size = new System.Drawing.Size(141, 141);
             this.fourthFace.TabIndex = 4;
             this.fourthFace.TabStop = false;
+            this.fourthFace.Click += new System.EventHandler(this.fourthFace_Click);
             // 
             // CharacterForm
             // 

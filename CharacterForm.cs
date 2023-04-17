@@ -17,6 +17,24 @@ namespace csharp_pingpong
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e) { }
+        private void someFaceCharacter_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void secondFace_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void thirdFace_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void fourthFace_Click(object sender, EventArgs e)
+        {
+            //
+        }
     }
 }
