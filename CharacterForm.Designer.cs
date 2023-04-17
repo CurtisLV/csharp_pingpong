@@ -107,7 +107,10 @@
             this.Controls.Add(this.titleLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(818, 497);
+            this.MinimumSize = new System.Drawing.Size(818, 497);
             this.Name = "CharacterForm";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Choose a Character!";
             ((System.ComponentModel.ISupportInitialize)(this.someFaceCharacter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thirdFace)).EndInit();
