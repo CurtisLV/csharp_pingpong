@@ -108,7 +108,7 @@
             // 
             // pongTimer
             // 
-            this.pongTimer.Tick += new System.EventHandler(this.timer1_Tick);
+            this.pongTimer.Tick += new System.EventHandler(this.pongTimer_Tick);
             // 
             // Pong
             // 
