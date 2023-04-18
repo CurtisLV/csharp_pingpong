@@ -33,7 +33,7 @@
             this.cpuPlayer = new System.Windows.Forms.PictureBox();
             this.pongBall = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.playerScore = new System.Windows.Forms.Label();
+            this.playerScoreLabel = new System.Windows.Forms.Label();
             this.cpuScore = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cpuPlayer)).BeginInit();
@@ -82,15 +82,15 @@
             // 
             // playerScore
             // 
-            this.playerScore.BackColor = System.Drawing.Color.Transparent;
-            this.playerScore.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.playerScore.ForeColor = System.Drawing.Color.Tomato;
-            this.playerScore.Location = new System.Drawing.Point(391, 38);
-            this.playerScore.Name = "playerScore";
-            this.playerScore.Size = new System.Drawing.Size(76, 76);
-            this.playerScore.TabIndex = 4;
-            this.playerScore.Text = "0";
-            this.playerScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.playerScoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.playerScoreLabel.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.playerScoreLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.playerScoreLabel.Location = new System.Drawing.Point(391, 38);
+            this.playerScoreLabel.Name = "playerScore";
+            this.playerScoreLabel.Size = new System.Drawing.Size(76, 76);
+            this.playerScoreLabel.TabIndex = 4;
+            this.playerScoreLabel.Text = "0";
+            this.playerScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cpuScore
             // 
@@ -112,7 +112,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1158, 678);
             this.Controls.Add(this.cpuScore);
-            this.Controls.Add(this.playerScore);
+            this.Controls.Add(this.playerScoreLabel);
             this.Controls.Add(this.pongBall);
             this.Controls.Add(this.cpuPlayer);
             this.Controls.Add(this.player1);
@@ -139,7 +139,7 @@
         private PictureBox cpuPlayer;
         private PictureBox pongBall;
         private PictureBox pictureBox1;
-        private Label playerScore;
+        private Label playerScoreLabel;
         private Label cpuScore;
     }
 }
