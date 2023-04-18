@@ -62,7 +62,10 @@ namespace csharp_pingpong
                 pongBall.Top = newSpot;
                 ballXCoordinate = -ballXCoordinate;
                 cpuScore++;
+                cpuScoreLabel.Text = cpuScore.ToString();
             }
+
+            // check if ball has exited right side of the screen
         }
     }
 }
