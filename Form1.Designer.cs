@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pong));
             this.player1 = new System.Windows.Forms.PictureBox();
             this.cpuPlayer = new System.Windows.Forms.PictureBox();
@@ -35,6 +36,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.playerScoreLabel = new System.Windows.Forms.Label();
             this.cpuScoreLabel = new System.Windows.Forms.Label();
+            this.pongTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cpuPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pongBall)).BeginInit();
@@ -104,6 +106,10 @@
             this.cpuScoreLabel.Text = "0";
             this.cpuScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pongTimer
+            // 
+            this.pongTimer.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Pong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -141,5 +147,6 @@
         private PictureBox pictureBox1;
         private Label playerScoreLabel;
         private Label cpuScoreLabel;
+        private System.Windows.Forms.Timer pongTimer;
     }
 }

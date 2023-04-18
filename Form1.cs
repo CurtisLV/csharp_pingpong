@@ -38,5 +38,10 @@ namespace csharp_pingpong
         {
             //
         }
+
+        private void pongTimer_Tick(object sender, EventArgs e)
+        {
+            //
+        }
     }
 }
