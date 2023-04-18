@@ -7,6 +7,11 @@ namespace csharp_pingpong
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e) { }
+        // Location variables
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //
+        }
     }
 }
