@@ -34,7 +34,7 @@
             this.pongBall = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.playerScoreLabel = new System.Windows.Forms.Label();
-            this.cpuScore = new System.Windows.Forms.Label();
+            this.cpuScoreLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cpuPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pongBall)).BeginInit();
@@ -80,29 +80,29 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // playerScore
+            // playerScoreLabel
             // 
             this.playerScoreLabel.BackColor = System.Drawing.Color.Transparent;
             this.playerScoreLabel.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.playerScoreLabel.ForeColor = System.Drawing.Color.Tomato;
             this.playerScoreLabel.Location = new System.Drawing.Point(391, 38);
-            this.playerScoreLabel.Name = "playerScore";
+            this.playerScoreLabel.Name = "playerScoreLabel";
             this.playerScoreLabel.Size = new System.Drawing.Size(76, 76);
             this.playerScoreLabel.TabIndex = 4;
             this.playerScoreLabel.Text = "0";
             this.playerScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cpuScore
+            // cpuScoreLabel
             // 
-            this.cpuScore.BackColor = System.Drawing.Color.Transparent;
-            this.cpuScore.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cpuScore.ForeColor = System.Drawing.Color.Tomato;
-            this.cpuScore.Location = new System.Drawing.Point(692, 38);
-            this.cpuScore.Name = "cpuScore";
-            this.cpuScore.Size = new System.Drawing.Size(76, 76);
-            this.cpuScore.TabIndex = 5;
-            this.cpuScore.Text = "0";
-            this.cpuScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cpuScoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.cpuScoreLabel.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cpuScoreLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.cpuScoreLabel.Location = new System.Drawing.Point(692, 38);
+            this.cpuScoreLabel.Name = "cpuScoreLabel";
+            this.cpuScoreLabel.Size = new System.Drawing.Size(76, 76);
+            this.cpuScoreLabel.TabIndex = 5;
+            this.cpuScoreLabel.Text = "0";
+            this.cpuScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Pong
             // 
@@ -111,7 +111,7 @@
             this.BackgroundImage = global::csharp_pingpong.Properties.Resources.Pong_Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1158, 678);
-            this.Controls.Add(this.cpuScore);
+            this.Controls.Add(this.cpuScoreLabel);
             this.Controls.Add(this.playerScoreLabel);
             this.Controls.Add(this.pongBall);
             this.Controls.Add(this.cpuPlayer);
@@ -140,6 +140,6 @@
         private PictureBox pongBall;
         private PictureBox pictureBox1;
         private Label playerScoreLabel;
-        private Label cpuScore;
+        private Label cpuScoreLabel;
     }
 }
