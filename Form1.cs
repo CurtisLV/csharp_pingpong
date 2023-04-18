@@ -29,6 +29,9 @@ namespace csharp_pingpong
         public Pong()
         {
             InitializeComponent();
+            bottomBoundry = ClientSize.Height - player1.Height;
+            xMidpoint = ClientSize.Width / 2;
+            yMidpoint = ClientSize.Height / 2;
         }
 
         private void Form1_Load(object sender, EventArgs e)
