@@ -46,6 +46,15 @@ namespace csharp_pingpong
             // Adjust where the ball is
             pongBall.Top -= ballYCoordinate;
             pongBall.Left -= ballXCoordinate;
+
+            //Make CPU move
+            cpuPlayer.Top += cpuDirection;
+
+            // check if CPU has reached top or bottom
+            if (cpuPlayer.Top < 0 || cpuPlayer.Top > bottomBoundry)
+            {
+                cpuDirection = -cpuDirection;
+            }
         }
     }
 }
