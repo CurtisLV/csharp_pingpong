@@ -41,7 +41,11 @@ namespace csharp_pingpong
 
         private void pongTimer_Tick(object sender, EventArgs e)
         {
-            //
+            Random newBallSpot = new Random();
+            int newSpot = newBallSpot.Next(100, ClientSize.Height - 100);
+            // Adjust where the ball is
+            pongBall.Top -= ballYCoordinate;
+            pongBall.Left -= ballXCoordinate;
         }
     }
 }
