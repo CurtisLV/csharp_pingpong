@@ -10,7 +10,7 @@ namespace csharp_pingpong
         // Score variables
 
         int playerScore = 0;
-        int cpuScorx = 0;
+        int cpuScore = 0;
 
         // Size variables
 
@@ -54,6 +54,14 @@ namespace csharp_pingpong
             if (cpuPlayer.Top < 0 || cpuPlayer.Top > bottomBoundry)
             {
                 cpuDirection = -cpuDirection;
+            }
+            // Check if ball has exited left side of the screen
+            if (pongBall.Left < 0)
+            {
+                pongBall.Left = xMidpoint;
+                pongBall.Top = newSpot;
+                ballXCoordinate = -ballXCoordinate;
+                cpuScore++;
             }
         }
     }
