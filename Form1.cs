@@ -101,6 +101,12 @@ namespace csharp_pingpong
             {
                 player1.Top += 10;
             }
+
+            // Check for winner
+            if (playerScore >= 10)
+            {
+                pongTimer.Stop();
+            }
         }
     }
 }
