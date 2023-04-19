@@ -66,6 +66,14 @@ namespace csharp_pingpong
             }
 
             // check if ball has exited right side of the screen
+            if (pongBall.Left + pongBall.Width > ClientSize.Width)
+            {
+                pongBall.Left = xMidpoint;
+                pongBall.Top = newSpot;
+                ballXCoordinate = -ballXCoordinate;
+                cpuScore++;
+                cpuScoreLabel.Text = cpuScore.ToString();
+            }
         }
     }
 }
