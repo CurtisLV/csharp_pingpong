@@ -74,6 +74,12 @@ namespace csharp_pingpong
                 playerScore++;
                 playerScoreLabel.Text = playerScore.ToString();
             }
+
+            // Ensure the ball is within the boundries of the screen
+            if (pongBall.Top < 0 || pongBall.Top + Height > ClientSize.Height)
+            {
+                ballYCoordinate = -ballYCoordinate;
+            }
         }
     }
 }
