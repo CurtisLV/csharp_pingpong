@@ -71,8 +71,8 @@ namespace csharp_pingpong
                 pongBall.Left = xMidpoint;
                 pongBall.Top = newSpot;
                 ballXCoordinate = -ballXCoordinate;
-                cpuScore++;
-                cpuScoreLabel.Text = cpuScore.ToString();
+                playerScore++;
+                playerScoreLabel.Text = playerScore.ToString();
             }
         }
     }
