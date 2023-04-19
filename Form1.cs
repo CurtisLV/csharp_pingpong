@@ -87,6 +87,12 @@ namespace csharp_pingpong
                 || pongBall.Bounds.IntersectsWith(cpuPlayer.Bounds)
             )
             {
+                ballXCoordinate -= ballXCoordinate;
+            }
+
+            // Move player up or down
+            if (playerDetectedUp == true && player1.Top > 0)
+            {
                 //
             }
         }
