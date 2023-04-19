@@ -93,7 +93,7 @@ namespace csharp_pingpong
             // Move player up or down
             if (playerDetectedUp == true && player1.Top > 0)
             {
-                //
+                player1.Top -= 10;
             }
         }
     }
