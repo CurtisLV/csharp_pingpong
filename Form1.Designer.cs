@@ -108,6 +108,7 @@
             // 
             // pongTimer
             // 
+            this.pongTimer.Enabled = true;
             this.pongTimer.Interval = 20;
             this.pongTimer.Tick += new System.EventHandler(this.pongTimer_Tick);
             // 
@@ -132,6 +133,8 @@
             this.Name = "Pong";
             this.Text = "Pong";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Pong_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Pong_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cpuPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pongBall)).EndInit();

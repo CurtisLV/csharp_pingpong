@@ -108,5 +108,15 @@ namespace csharp_pingpong
                 pongTimer.Stop();
             }
         }
+
+        private void Pong_KeyDown(object sender, KeyEventArgs e)
+        {
+            //
+        }
+
+        private void Pong_KeyUp(object sender, KeyEventArgs e)
+        {
+            //
+        }
     }
 }
