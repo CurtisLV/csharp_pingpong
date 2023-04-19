@@ -90,10 +90,16 @@ namespace csharp_pingpong
                 ballXCoordinate -= ballXCoordinate;
             }
 
-            // Move player up or down
+            // Move player up
             if (playerDetectedUp == true && player1.Top > 0)
             {
                 player1.Top -= 10;
+            }
+
+            // Move player down
+            if (playerDetectedDown == true && player1.Top < bottomBoundry)
+            {
+                player1.Top += 10;
             }
         }
     }
