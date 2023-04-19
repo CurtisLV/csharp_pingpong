@@ -80,6 +80,15 @@ namespace csharp_pingpong
             {
                 ballYCoordinate = -ballYCoordinate;
             }
+
+            // Check if the ball hits the player or the cpu paddle
+            if (
+                pongBall.Bounds.IntersectsWith(player1.Bounds)
+                || pongBall.Bounds.IntersectsWith(cpuPlayer.Bounds)
+            )
+            {
+                //
+            }
         }
     }
 }
