@@ -76,7 +76,7 @@ namespace csharp_pingpong
             }
 
             // Ensure the ball is within the boundries of the screen
-            if (pongBall.Top < 0 || pongBall.Top + Height > ClientSize.Height)
+            if (pongBall.Top < 0 || pongBall.Top + pongBall.Height > ClientSize.Height)
             {
                 ballYCoordinate = -ballYCoordinate;
             }
@@ -87,7 +87,7 @@ namespace csharp_pingpong
                 || pongBall.Bounds.IntersectsWith(cpuPlayer.Bounds)
             )
             {
-                ballXCoordinate -= ballXCoordinate;
+                ballXCoordinate = -ballXCoordinate;
             }
 
             // Move player up
