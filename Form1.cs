@@ -130,6 +130,11 @@ namespace csharp_pingpong
                 {
                     pongTimer.Stop();
                 }
+                else
+                {
+                    pongTimer.Start();
+                }
+                spaceBarClicked++;
             }
         }
 
