@@ -112,7 +112,12 @@ namespace csharp_pingpong
         private void Pong_KeyDown(object sender, KeyEventArgs e)
         {
             // If player presses the up arrow, move paddle upwards
-            if (player1)
+            if (e.KeyCode == Keys.Up)
+            {
+                playerDetectedUp = true;
+            }
+
+            // If player presses the down arrow, move paddle down
         }
 
         private void Pong_KeyUp(object sender, KeyEventArgs e)
