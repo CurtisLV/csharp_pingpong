@@ -122,6 +122,15 @@ namespace csharp_pingpong
             {
                 playerDetectedDown = true;
             }
+
+            // Pause function on spacebar
+            if (e.KeyCode == Keys.Space)
+            {
+                if (spaceBarClicked % 2 == 0)
+                {
+                    pongTimer.Stop();
+                }
+            }
         }
 
         private void Pong_KeyUp(object sender, KeyEventArgs e)
