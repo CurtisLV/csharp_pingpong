@@ -119,12 +119,12 @@
             this.BackgroundImage = global::csharp_pingpong.Properties.Resources.Pong_Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1158, 678);
-            this.Controls.Add(this.cpuScoreLabel);
-            this.Controls.Add(this.playerScoreLabel);
             this.Controls.Add(this.pongBall);
             this.Controls.Add(this.cpuPlayer);
             this.Controls.Add(this.player1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.playerScoreLabel);
+            this.Controls.Add(this.cpuScoreLabel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
