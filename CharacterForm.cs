@@ -29,7 +29,7 @@ namespace csharp_pingpong
         private void secondFace_Click(object sender, EventArgs e)
         {
             (Owner as Pong).pongBall.Image = Image.FromFile(
-                @"C:\Users\karli\Desktop\GitHub\csharp_pingpong\MOG.png"
+                @"C:\Users\karli\Desktop\GitHub\csharp_pingpong\No.png"
             );
             (Owner as Pong).pongTimer.Start();
             this.Hide();
@@ -38,7 +38,7 @@ namespace csharp_pingpong
         private void thirdFace_Click(object sender, EventArgs e)
         {
             (Owner as Pong).pongBall.Image = Image.FromFile(
-                @"C:\Users\karli\Desktop\GitHub\csharp_pingpong\MOG.png"
+                @"C:\Users\karli\Desktop\GitHub\csharp_pingpong\laugh.png"
             );
             (Owner as Pong).pongTimer.Start();
             this.Hide();
@@ -47,7 +47,7 @@ namespace csharp_pingpong
         private void fourthFace_Click(object sender, EventArgs e)
         {
             (Owner as Pong).pongBall.Image = Image.FromFile(
-                @"C:\Users\karli\Desktop\GitHub\csharp_pingpong\MOG.png"
+                @"C:\Users\karli\Desktop\GitHub\csharp_pingpong\trololopng.png"
             );
             (Owner as Pong).pongTimer.Start();
             this.Hide();
