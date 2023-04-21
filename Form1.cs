@@ -124,8 +124,10 @@ namespace csharp_pingpong
             }
 
             // C - for selecting character
-
-
+            if (e.KeyCode == Keys.C)
+            {
+                //
+            }
 
             // Pause function on spacebar
             if (e.KeyCode == Keys.Space)
