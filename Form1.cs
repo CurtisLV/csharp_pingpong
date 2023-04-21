@@ -123,6 +123,10 @@ namespace csharp_pingpong
                 playerDetectedDown = true;
             }
 
+            // C - for selecting character
+
+
+
             // Pause function on spacebar
             if (e.KeyCode == Keys.Space)
             {
