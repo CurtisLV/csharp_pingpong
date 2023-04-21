@@ -126,7 +126,7 @@ namespace csharp_pingpong
             // C - for selecting character
             if (e.KeyCode == Keys.C)
             {
-                //
+                Form character = new CharacterForm();
             }
 
             // Pause function on spacebar
