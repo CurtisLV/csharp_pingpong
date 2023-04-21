@@ -19,8 +19,10 @@ namespace csharp_pingpong
 
         private void someFaceCharacter_Click(object sender, EventArgs e)
         {
-            (this.Owner as Pong).pongBall.Image = Image.FromFile(@"C:\Users\karli\Desktop\GitHub\csharp_pingpong\");
-            (this.Owner as Pong).pongBall.
+            (Owner as Pong).pongBall.Image = Image.FromFile(
+                @"C:\Users\karli\Desktop\GitHub\csharp_pingpong\"
+            );
+            (Owner as Pong).pongTimer.Start();
         }
 
         private void secondFace_Click(object sender, EventArgs e)
