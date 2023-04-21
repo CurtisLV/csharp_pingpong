@@ -19,7 +19,7 @@ namespace csharp_pingpong
 
         private void someFaceCharacter_Click(object sender, EventArgs e)
         {
-            //
+            (this.Owner as Pong).pongBall
         }
 
         private void secondFace_Click(object sender, EventArgs e)
