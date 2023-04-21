@@ -147,10 +147,10 @@
 
         private PictureBox player1;
         private PictureBox cpuPlayer;
-        private PictureBox pongBall;
         private PictureBox pictureBox1;
         private Label playerScoreLabel;
         private Label cpuScoreLabel;
         private System.Windows.Forms.Timer pongTimer;
+        public PictureBox pongBall;
     }
 }
