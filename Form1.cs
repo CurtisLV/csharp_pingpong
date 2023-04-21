@@ -127,6 +127,9 @@ namespace csharp_pingpong
             if (e.KeyCode == Keys.C)
             {
                 Form character = new CharacterForm();
+                character.Owner = this;
+                pongTimer.Stop();
+                character.Show();
             }
 
             // Pause function on spacebar
