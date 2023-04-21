@@ -64,10 +64,11 @@
             // pongBall
             // 
             this.pongBall.BackColor = System.Drawing.Color.Transparent;
-            this.pongBall.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pongBall.BackgroundImage")));
+            this.pongBall.Image = ((System.Drawing.Image)(resources.GetObject("pongBall.Image")));
             this.pongBall.Location = new System.Drawing.Point(564, 324);
             this.pongBall.Name = "pongBall";
             this.pongBall.Size = new System.Drawing.Size(30, 30);
+            this.pongBall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pongBall.TabIndex = 2;
             this.pongBall.TabStop = false;
             // 
