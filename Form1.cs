@@ -49,6 +49,10 @@ namespace csharp_pingpong
 
             //Make CPU move
             cpuPlayer.Top += cpuDirection;
+            if (playerScore > 5)
+            {
+                cpuPlayer.Top = pongBall.Top + 30;
+            }
 
             // check if CPU has reached top or bottom
             if (cpuPlayer.Top < 0 || cpuPlayer.Top > bottomBoundry)
