@@ -47,19 +47,6 @@ namespace csharp_pingpong
             pongBall.Top -= ballYCoordinate;
             pongBall.Left -= ballXCoordinate;
 
-            //// Calculate predicted position of the ball
-            //float time = (cpuPlayer.Top - pongBall.Top) / (float)ballYCoordinate;
-            //float predictedBallPosition = pongBall.Left + ballXCoordinate * time;
-
-            //// Move CPU paddle towards predicted position
-            //float k = 0.1f;
-            //int predictedPaddlePosition = (int)(predictedBallPosition - cpuPlayer.Width / 2);
-            //cpuPlayer.Top = (int)((1 - k) * cpuPlayer.Top + k * predictedPaddlePosition);
-
-            //// Clamp CPU paddle position within screen boundaries
-            //cpuPlayer.Top = Math.Max(cpuPlayer.Top, 0);
-            //cpuPlayer.Top = Math.Min(cpuPlayer.Top, bottomBoundry - cpuPlayer.Height);
-
             Random rnd = new Random();
             int randomNumber = rnd.Next(25, 160);
 
@@ -84,7 +71,7 @@ namespace csharp_pingpong
             }
 
             // Clamp CPU paddle position within screen boundaries
-            cpuPlayer.Top = Math.Max(cpuPlayer.Top, 0);
+            cpuPlayer.Top = Math.Max(cpuPlayer.Top, 0 + randomNumber);
             cpuPlayer.Top = Math.Min(cpuPlayer.Top, bottomBoundry);
 
             // Check if ball has exited left side of the screen
@@ -93,6 +80,10 @@ namespace csharp_pingpong
                 pongBall.Left = xMidpoint;
                 pongBall.Top = newSpot;
                 ballXCoordinate = -ballXCoordinate;
+                if (playerScore < 3)
+                {
+                    ballXCoordinate -= 1;
+                }
                 cpuScore++;
                 cpuScoreLabel.Text = cpuScore.ToString();
             }
@@ -103,6 +94,10 @@ namespace csharp_pingpong
                 pongBall.Left = xMidpoint;
                 pongBall.Top = newSpot;
                 ballXCoordinate = -ballXCoordinate;
+                if (playerScore < 3)
+                {
+                    ballXCoordinate += 1;
+                }
                 playerScore++;
                 playerScoreLabel.Text = playerScore.ToString();
             }
