@@ -47,33 +47,6 @@ namespace csharp_pingpong
             pongBall.Top -= ballYCoordinate;
             pongBall.Left -= ballXCoordinate;
 
-            ////Make CPU move
-            //cpuPlayer.Top += cpuDirection;
-
-            //// Make CPU better at the game
-            //if (playerScore > 3)
-            //{
-            //    cpuPlayer.Top = pongBall.Top + 10;
-            //}
-
-            //// check if CPU has reached top or bottom
-            //if (cpuPlayer.Top < 0 || cpuPlayer.Top > bottomBoundry)
-            //{
-            //    cpuDirection = -cpuDirection;
-            //}
-
-            // Calculate predicted position of the ball
-            float time = (cpuPlayer.Top - pongBall.Top) / (float)ballYCoordinate;
-            float predictedBallPosition = pongBall.Left + ballXCoordinate * time;
-
-            // Move CPU paddle towards predicted position
-            float k = 0.1f;
-            cpuPlayer.Top = (int)((1 - k) * cpuPlayer.Top + k * predictedBallPosition);
-
-            // Clamp CPU paddle position within screen boundaries
-            cpuPlayer.Top = Math.Max(cpuPlayer.Top, 0);
-            cpuPlayer.Top = Math.Min(cpuPlayer.Top, bottomBoundry);
-
             // Check if ball has exited left side of the screen
             if (pongBall.Left < 0)
             {
