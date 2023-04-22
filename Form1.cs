@@ -60,12 +60,17 @@ namespace csharp_pingpong
             //cpuPlayer.Top = Math.Max(cpuPlayer.Top, 0);
             //cpuPlayer.Top = Math.Min(cpuPlayer.Top, bottomBoundry - cpuPlayer.Height);
 
+            Random rnd = new Random();
+            int randomNumber = rnd.Next(25, 160);
+
             // Move CPU paddle towards predicted position
             float k = 0.1f;
             float predictedBallPosition =
                 pongBall.Top
-                + (pongBall.Top - cpuPlayer.Top) * (pongBall.Left - cpuPlayer.Right) / (5 * -1f);
-            float distanceToPredictedBall = predictedBallPosition - cpuPlayer.Top;
+                + (pongBall.Top - cpuPlayer.Top)
+                    * (pongBall.Left - cpuPlayer.Right)
+                    / (randomNumber * -1f);
+            float distanceToPredictedBall = predictedBallPosition - cpuPlayer.Top - randomNumber;
 
             if (Math.Abs(distanceToPredictedBall) < cpuPlayer.Height / 2)
             {
@@ -80,7 +85,7 @@ namespace csharp_pingpong
 
             // Clamp CPU paddle position within screen boundaries
             cpuPlayer.Top = Math.Max(cpuPlayer.Top, 0);
-            cpuPlayer.Top = Math.Min(cpuPlayer.Top, bottomBoundry - cpuPlayer.Height);
+            cpuPlayer.Top = Math.Min(cpuPlayer.Top, bottomBoundry);
 
             // Check if ball has exited left side of the screen
             if (pongBall.Left < 0)
