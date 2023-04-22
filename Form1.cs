@@ -51,9 +51,9 @@ namespace csharp_pingpong
             cpuPlayer.Top += cpuDirection;
 
             // Make CPU better at the game
-            if (playerScore > 1)
+            if (playerScore > 3)
             {
-                cpuPlayer.Top = pongBall.Top + 30;
+                cpuPlayer.Top = pongBall.Top + 10;
             }
 
             // check if CPU has reached top or bottom
