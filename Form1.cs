@@ -47,20 +47,24 @@ namespace csharp_pingpong
             pongBall.Top -= ballYCoordinate;
             pongBall.Left -= ballXCoordinate;
 
-            //Make CPU move
-            cpuPlayer.Top += cpuDirection;
+            ////Make CPU move
+            //cpuPlayer.Top += cpuDirection;
 
-            // Make CPU better at the game
-            if (playerScore > 3)
-            {
-                cpuPlayer.Top = pongBall.Top + 10;
-            }
+            //// Make CPU better at the game
+            //if (playerScore > 3)
+            //{
+            //    cpuPlayer.Top = pongBall.Top + 10;
+            //}
 
-            // check if CPU has reached top or bottom
-            if (cpuPlayer.Top < 0 || cpuPlayer.Top > bottomBoundry)
-            {
-                cpuDirection = -cpuDirection;
-            }
+            //// check if CPU has reached top or bottom
+            //if (cpuPlayer.Top < 0 || cpuPlayer.Top > bottomBoundry)
+            //{
+            //    cpuDirection = -cpuDirection;
+            //}
+
+
+
+
             // Check if ball has exited left side of the screen
             if (pongBall.Left < 0)
             {
