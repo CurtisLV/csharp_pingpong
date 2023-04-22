@@ -47,14 +47,36 @@ namespace csharp_pingpong
             pongBall.Top -= ballYCoordinate;
             pongBall.Left -= ballXCoordinate;
 
-            // Calculate predicted position of the ball
-            float time = (cpuPlayer.Top - pongBall.Top) / (float)ballYCoordinate;
-            float predictedBallPosition = pongBall.Left + ballXCoordinate * time;
+            //// Calculate predicted position of the ball
+            //float time = (cpuPlayer.Top - pongBall.Top) / (float)ballYCoordinate;
+            //float predictedBallPosition = pongBall.Left + ballXCoordinate * time;
+
+            //// Move CPU paddle towards predicted position
+            //float k = 0.1f;
+            //int predictedPaddlePosition = (int)(predictedBallPosition - cpuPlayer.Width / 2);
+            //cpuPlayer.Top = (int)((1 - k) * cpuPlayer.Top + k * predictedPaddlePosition);
+
+            //// Clamp CPU paddle position within screen boundaries
+            //cpuPlayer.Top = Math.Max(cpuPlayer.Top, 0);
+            //cpuPlayer.Top = Math.Min(cpuPlayer.Top, bottomBoundry - cpuPlayer.Height);
 
             // Move CPU paddle towards predicted position
             float k = 0.1f;
-            int predictedPaddlePosition = (int)(predictedBallPosition - cpuPlayer.Width / 2);
-            cpuPlayer.Top = (int)((1 - k) * cpuPlayer.Top + k * predictedPaddlePosition);
+            float predictedBallPosition =
+                pongBall.Top
+                + (pongBall.Top - cpuPlayer.Top) * (pongBall.Left - cpuPlayer.Right) / (5 * -1f);
+            float distanceToPredictedBall = predictedBallPosition - cpuPlayer.Top;
+
+            if (Math.Abs(distanceToPredictedBall) < cpuPlayer.Height / 2)
+            {
+                cpuPlayer.Top = (int)(cpuPlayer.Top + distanceToPredictedBall * k);
+            }
+            else
+            {
+                cpuPlayer.Top = (int)(
+                    cpuPlayer.Top + Math.Sign(distanceToPredictedBall) * cpuPlayer.Height / 2 * k
+                );
+            }
 
             // Clamp CPU paddle position within screen boundaries
             cpuPlayer.Top = Math.Max(cpuPlayer.Top, 0);
