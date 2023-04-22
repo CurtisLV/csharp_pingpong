@@ -110,7 +110,7 @@
             // pongTimer
             // 
             this.pongTimer.Enabled = true;
-            this.pongTimer.Interval = 20;
+            this.pongTimer.Interval = 10;
             this.pongTimer.Tick += new System.EventHandler(this.pongTimer_Tick);
             // 
             // Pong
