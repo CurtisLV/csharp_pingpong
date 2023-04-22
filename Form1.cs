@@ -106,7 +106,15 @@ namespace csharp_pingpong
                 || pongBall.Bounds.IntersectsWith(cpuPlayer.Bounds)
             )
             {
+                //ballXCoordinate = -ballXCoordinate;
+                bool ballGoingLeft = ballXCoordinate < 0;
                 ballXCoordinate = -ballXCoordinate;
+
+                // Check if paddle is moving in the opposite direction
+                if ((playerDetectedUp && ballGoingLeft) || (playerDetectedDown && !ballGoingLeft))
+                {
+                    ballYCoordinate = -ballYCoordinate;
+                }
             }
 
             // Move player up
